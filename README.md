@@ -1,3 +1,6 @@
+
+[![Build Status](https://circleci.com/gh/sumitarora02/Udacity_ML_Microservices.svg?style=shield)](https://app.circleci.com/pipelines/github/sumitarora02/Udacity_ML_Microservices)
+
 # Machine Learning with Microservices
 
 ## Project Overview
