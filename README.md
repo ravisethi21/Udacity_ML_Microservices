@@ -41,6 +41,10 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 - `output_txt_files`  folder with docker and kubernetes outputs files
 
+> ### Screenshots:
+
+- `Screenshots`  folder with with some additional captures
+
 > ### Docker:
 
 - `Dockerfile` use this file to deploy an image for the app to be runned on a container
@@ -57,19 +61,14 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ## Setup the Environment
 
-* Create a virtualenv and activate it
+* Run `make setup` to create a virtual env and activate it
 * Run `make install` to install the necessary dependencies
 
 ## Running `app.py`
 
-You can run in different ways this app,these are Standalone, Docker or Kubernetes
+You can run in different ways this app,these are Docker or Kubernetes
 
-1. Standalone:  `python app.py`
-
-> You will now access the app on localhost port 80. [http://localhost:80](http://localhost:80)
-
-
-2. Run in Docker:  `./utils/run_docker.sh`
+1. Run in Docker:  `./utils/run_docker.sh`
 
 The script will:
 - Build an docker image
@@ -79,7 +78,7 @@ The script will:
 > You can now access the app on localhost port 5000. [http://localhost:5000](http://localhost:5000)
 
 
-3. Run in Kubernetes:  `./utils/run_kubernetes.sh`
+2. Run in Kubernetes:  `./utils/run_kubernetes.sh`
 
 The script will:
 - Start to run a container in Kubernetes cluster (make sure to have one ready the best option to locally is use `minikube`)

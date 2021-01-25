@@ -1,2 +1,17 @@
+unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ make run_kubernetes
+./utils/run_kubernetes.sh
+Flag --generator has been deprecated, has no effect and will be removed in the future.
+Error from server (AlreadyExists): pods "project-microservices-udacity" already exists
+pod/project-microservices-udacity condition met
+NAME                            READY   STATUS    RESTARTS   AGE
+project-microservices-udacity   1/1     Running   1          34m
+Forwarding from 127.0.0.1:5000 -> 80
+Forwarding from [::1]:5000 -> 80 
 
-+ dockerpath=sumitarora02/project-microservices-udacity
+unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ ./utils/make_prediction.sh
+Port: 5000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}

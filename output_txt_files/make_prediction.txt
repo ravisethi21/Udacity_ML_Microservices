@@ -1,0 +1,7 @@
+unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ ./utils/make_prediction.sh
+Port: 5000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
