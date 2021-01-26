@@ -15,10 +15,10 @@ install:
 	pip3 install --upgrade pip &&\
 		pip3 install --trusted-host pypi.python.org -r requirements.txt
 
-install_hadolint:
+install_local_hadolint:
 	# Install hadolint
-	wget -O ./hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
-		chmod +x ./hadolint
+	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+	sudo chmod +x /bin/hadolint
 
 test:
 	# Additional, optional, tests could go here
@@ -28,7 +28,7 @@ test:
 lint:
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
 	# This is linter for Dockerfiles
-	./hadolint DockerFile
+	hadolint DockerFile
 	# This is a linter for Python source code linter: https://www.pylint.org/
 	# This should be run from inside a virtualenv
 	pylint --disable=R,C,W1203 app.py

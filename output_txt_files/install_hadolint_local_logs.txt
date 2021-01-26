@@ -1,19 +1,19 @@
-(.devops) unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ make install_hadolint 
+(.devops) unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ make install_local_hadolint 
 # Install hadolint
-wget -O ./hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\  
-        chmod +x ./hadolint
---2021-01-26 18:01:49--  https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
-Resolving github.com (github.com)... 13.234.176.102
-Connecting to github.com (github.com)|13.234.176.102|:443... connected.
+sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
+sudo chmod +x /bin/hadolint
+--2021-01-26 19:45:55--  https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64      
+Resolving github.com (github.com)... 13.234.210.38
+Connecting to github.com (github.com)|13.234.210.38|:443... connected.
 HTTP request sent, awaiting response... 302 Found
-Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/46234189/497d2080-54bd-11e9-94e5-926d35bd3e53?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210126T123138Z&X-Amz-Expires=300&X-Amz-Signature=cc11a236af00ca0c33578c68365115b284a819fb2230edf3e333aad759c3ace6&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=46234189&response-content-disposition=attachment%3B%20filename%3Dhadolint-Linux-x86_64&response-content-type=application%2Foctet-stream [following]
---2021-01-26 18:01:49--  https://github-production-release-asset-2e65be.s3.amazonaws.com/46234189/497d2080-54bd-11e9-94e5-926d35bd3e53?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210126T123138Z&X-Amz-Expires=300&X-Amz-Signature=cc11a236af00ca0c33578c68365115b284a819fb2230edf3e333aad759c3ace6&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=46234189&response-content-disposition=attachment%3B%20filename%3Dhadolint-Linux-x86_64&response-content-type=application%2Foctet-stream
-Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.217.76.212
-Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.217.76.212|:443... connected.
+Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/46234189/497d2080-54bd-11e9-94e5-926d35bd3e53?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210126T141338Z&X-Amz-Expires=300&X-Amz-Signature=91e0e7fd4e08c92e72a22a568add19d2cd16489246dbdde8ffbf8593095903bc&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=46234189&response-content-disposition=attachment%3B%20filename%3Dhadolint-Linux-x86_64&response-content-type=application%2Foctet-stream [following]
+--2021-01-26 19:45:55--  https://github-production-release-asset-2e65be.s3.amazonaws.com/46234189/497d2080-54bd-11e9-94e5-926d35bd3e53?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210126T141338Z&X-Amz-Expires=300&X-Amz-Signature=91e0e7fd4e08c92e72a22a568add19d2cd16489246dbdde8ffbf8593095903bc&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=46234189&response-content-disposition=attachment%3B%20filename%3Dhadolint-Linux-x86_64&response-content-type=application%2Foctet-stream
+Resolving github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)... 52.217.64.220
+Connecting to github-production-release-asset-2e65be.s3.amazonaws.com (github-production-release-asset-2e65be.s3.amazonaws.com)|52.217.64.220|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 3683832 (3.5M) [application/octet-stream]
-Saving to: ‘./hadolint’
+Saving to: ‘/bin/hadolint’
 
-./hadolint                              100%[==============================================================================>]   3.51M   572KB/s    in 6.3s    
+/bin/hadolint                           100%[==============================================================================>]   3.51M   878KB/s    in 4.1s    
 
-2021-01-26 18:01:57 (572 KB/s) - ‘./hadolint’ saved [3683832/3683832]
+2021-01-26 19:46:00 (878 KB/s) - ‘/bin/hadolint’ saved [3683832/3683832]
