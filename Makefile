@@ -16,7 +16,7 @@ install:
 		pip3 install --trusted-host pypi.python.org -r requirements.txt
 
 install_local_hadolint:
-	# Install hadolint
+	# Install hadolint locally
 	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
 	sudo chmod +x /bin/hadolint
 
