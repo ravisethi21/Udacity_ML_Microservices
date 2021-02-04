@@ -1,43 +1,36 @@
 
 [![Build Status](https://circleci.com/gh/ravisethi21/Udacity_ML_Microservices.svg?style=shield)](https://app.circleci.com/pipelines/github/ravisethi21/Udacity_ML_Microservices)
 
-# Machine Learning with Microservices
+> Project Overview
+In this project, I have applied the skills to operationalize a Machine Learning Microservice API.
 
-## Project Overview
+There are given a pre-trained, sklearn model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on the data source site.
 
-This project is to showcase the learnings from Udacity DevOps Nanodegree program to operationalize a Machine Learning Microservice API. 
 
-This project hosts a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). 
-
-This project would operationalize a Python flask app that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
-
-## Files structure
-
-> ### Application:
+> Application:
 
 - `app.py` application script
-- `model_data` folder with the trained model and data for prediction
 - `requirements.txt` dependencies of app
 
 
-> ### CI/CD:
+>  CI/CD:
 
 - `.circleci/config.yml` folder with the configuration to CircleCI
 
 
-> ### Outputs:
+>  Outputs:
 
 - `output_txt_files`  folder with docker and kubernetes outputs files
 
-> ### Screenshots:
+>  Screenshots:
 
 - `Screenshots`  folder with with some additional captures
 
-> ### Docker:
+>  Docker:
 
 - `Dockerfile` use this file to deploy an image for the app to be runned on a container
 
-> ### Tools:
+> Scripts & Makefiles
 
 - `Makefile`  useful commands to make setup, install, test, lint, run_docker, run_kubernetes, upload_docker, all
 - `run_docker.sh` script to build and start container 
@@ -45,9 +38,7 @@ This project would operationalize a Python flask app that serves out predictions
 - `upload_docker.sh` script to upload to dockerhub container
 - `make_prediction.sh` script to test application
 
----
-
-## Setup the Environment
+> Setup the Environment
 
 * Run `make setup` to create a virtual env and activate it
 * Run `make install` to install the necessary dependencies
@@ -105,5 +96,3 @@ You can test this application by running the script `./make_prediction.sh`, reme
    }
 }
 ```
-
-with the `curl` command on port 5000 (you can switch to 80 if running on the standalone way). You can test with this input but if you want change it, please remember read more about the data (parameters that you can use in an input) on Kaggle, [data source site](https://www.kaggle.com/c/boston-housing)
