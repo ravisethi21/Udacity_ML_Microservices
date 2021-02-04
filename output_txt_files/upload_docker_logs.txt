@@ -1,15 +1,19 @@
-(.devops) unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ make upload_docker
-./utils/upload_docker.sh
-Docker ID and Image: sumitarora02/project-microservices-udacity
+(.devops) ravikumar21@DESKTOP-4FKI0II:/mnt/c/Users/DELL/project4/Udacity_ML_Microservices$ sudo sh upload_docker.sh 
+[sudo] password for ravikumar21: 
+Docker ID and Image: ravisethi21/project-microservices-udacity
 Password: 
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
 Login Succeeded
 Using default tag: latest
-The push refers to repository [docker.io/sumitarora02/project-microservices-udacity]
-cae05cd5c78c: Pushing [====>                                              ]  27.72MB/325.9MB
-cae05cd5c78c: Pushing [=====>                                             ]  37.19MB/325.9MB
-cae05cd5c78c: Pushing [======>                                            ]  43.32MB/325.9MB
-910e7f651f82: Pushed
-c1527ddda87b: Pushed 
+The push refers to repository [docker.io/ravisethi21/project-microservices-udacity]
+e8e1b2821b2e: Pushed
+d5f69c5de79e: Pushed
+189fc5025a87: Pushed
+7b1eddaa7b99: Pushed
+ea7ed06fd642: Pushed
 799a7872c8c7: Mounted from library/python
 715450468940: Mounted from library/python
 c9d608035aef: Mounted from library/python
@@ -17,20 +21,6 @@ bb9c02680a15: Mounted from library/python
 a637c551a0da: Mounted from library/python
 2c8d31157b81: Mounted from library/python
 7b76d801397d: Mounted from library/python
-cae05cd5c78c: Pushing [======>                                            ]  44.99MB/325.9MB
+f32868cde90b: Mounted from library/python
 0db06dff9d9a: Mounted from library/python
-cae05cd5c78c: Pushing [======================>                            ]  149.7MB/325.9MB
-cae05cd5c78c: Pushing [==================================================>]  333.3MB
-[2021-01-25 20:10:31,712] INFO in app: JSON payload:
-{'CHAS': {'0': 0}, 'RM': {'0': 9.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2021-01-25 20:10:31,728] INFO in app: Inference payload DataFrame:
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  9.575  296.0     15.3  396.9   4.98
-[2021-01-25 20:10:31,740] INFO in app: Scaling Payload:
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  9.575  296.0     15.3  396.9   4.98
-[2021-01-25 20:10:31,746] INFO in app: The output prediction is: [20.35373177134412]
-172.17.0.1 - - [25/Jan/2021 20:10:31] "POST /predict HTTP/1.1" 200 -
-172.17.0.1 - - [25/Jan/2021 20:10:41] "GET / HTTP/1.1" 200 -
-172.17.0.1 - - [25/Jan/2021 20:10:43] "GET / HTTP/1.1" 200 -
-172.17.0.1 - - [25/Jan/2021 20:17:37] "GET / HTTP/1.1" 200 -
+latest: digest: sha256:71447fbb5b58a8e732f4eab0b8727e6e0de13ef7e882d8c9a523503735ec94d5 size: 3262

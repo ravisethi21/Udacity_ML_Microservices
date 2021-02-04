@@ -1,4 +1,4 @@
-(.devops) unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ make lint
+(.devops) ravikumar21@DESKTOP-4FKI0II:/mnt/c/Users/DELL/project4/Udacity_ML_Microservices$ make lint
 # See local hadolint install instructions:   https://github.com/hadolint/hadolint
 # This is linter for Dockerfiles
 hadolint DockerFile
@@ -9,4 +9,3 @@ pylint --disable=R,C,W1203 app.py
 --------------------------------------------------------------------
 Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
 
-(.devops) unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ 

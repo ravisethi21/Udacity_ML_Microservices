@@ -1,4 +1,4 @@
-unix2102@DESKTOP-H480AT2:/mnt/c/github/sumit/Udacity_ML_Microservices$ ./utils/make_prediction.sh
+unix2102@DESKTOP-H480AT2:/mnt/c/Users/DELL/project4/Udacity_ML_Microservices$ ./make_prediction.sh
 Port: 5000
 {
   "prediction": [

@@ -1,5 +1,5 @@
 
-[![Build Status](https://circleci.com/gh/sumitarora02/Udacity_ML_Microservices.svg?style=shield)](https://app.circleci.com/pipelines/github/sumitarora02/Udacity_ML_Microservices)
+[![Build Status](https://circleci.com/gh/ravisethi21/Udacity_ML_Microservices.svg?style=shield)](https://app.circleci.com/pipelines/github/ravisethi21/Udacity_ML_Microservices)
 
 # Machine Learning with Microservices
 
@@ -37,7 +37,7 @@ This project would operationalize a Python flask app that serves out predictions
 
 - `Dockerfile` use this file to deploy an image for the app to be runned on a container
 
-> ### Utils/Tools:
+> ### Tools:
 
 - `Makefile`  useful commands to make setup, install, test, lint, run_docker, run_kubernetes, upload_docker, all
 - `run_docker.sh` script to build and start container 
@@ -57,7 +57,7 @@ This project would operationalize a Python flask app that serves out predictions
 
 You can run in different ways this app,these are Docker or Kubernetes
 
-1. Run in Docker:  `./utils/run_docker.sh`
+1. Run in Docker:  `./run_docker.sh`
 
 The script will:
 - Build an docker image
@@ -67,7 +67,7 @@ The script will:
 > You can now access the app on localhost port 5000. [http://localhost:5000](http://localhost:5000)
 
 
-2. Run in Kubernetes:  `./utils/run_kubernetes.sh`
+2. Run in Kubernetes:  `./run_kubernetes.sh`
 
 The script will:
 - Start to run a container in Kubernetes cluster (make sure to have one ready the best option to locally is use `minikube`)
@@ -81,7 +81,7 @@ You can delete when you've finished the pod with the command `kubectl delete pod
 
 ## Test the app
 
-You can test this application by running the script `./utils/make_prediction.sh`, remember that depending on the input the model returns a price prediction on a house in Boston. In the script above there is a default json (you can change it) input:
+You can test this application by running the script `./make_prediction.sh`, remember that depending on the input the model returns a price prediction on a house in Boston. In the script above there is a default json (you can change it) input:
 
 ```json
 {  

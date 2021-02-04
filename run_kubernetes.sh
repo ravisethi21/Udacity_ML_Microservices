@@ -4,7 +4,7 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=sumitarora02/project-microservices-udacity
+dockerpath=ravisethi21/project-microservices-udacity
 
 # Step 2
 # Run the Docker Hub container with kubernetes

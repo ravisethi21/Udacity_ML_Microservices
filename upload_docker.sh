@@ -5,11 +5,11 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=sumitarora02/project-microservices-udacity
+dockerpath=ravisethi21/project-microservices-udacity
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login --username=sumitarora02
+docker login --username=ravisethi21
 docker tag project-microservices-udacity:latest ${dockerpath}:latest
 
 # Step 3:
