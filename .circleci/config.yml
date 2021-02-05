@@ -42,7 +42,7 @@ jobs:
         - ./venv
         key: v1-dependencies-{{ checksum "requirements.txt" }}
 
-    # run lint!
+    # run lint locally!
     - run:
         name: run lint
         command: |
